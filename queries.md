@@ -691,7 +691,7 @@ WHERE published = true AND NOT (
 <a name="json-where-clauses"></a>
 ### JSON Where Clauses
 
-Laravel also supports querying JSON column types on databases that provide support for JSON column types. Currently, this includes MariaDB 10.3+, MySQL 8.0+, PostgreSQL 12.0+, SQL Server 2017+, and SQLite 3.39.0+. To query a JSON column, use the `->` operator:
+Laravel also supports querying JSON column types on databases that provide support for JSON column types. Currently, this includes MariaDB, MySQL, PostgreSQL, SQL Server, and SQLite 3.39.0+. To query a JSON column, use the `->` operator:
 
 ```php
 $users = DB::table('users')
@@ -1491,7 +1491,7 @@ DB::table('users')->updateOrInsert(
 <a name="updating-json-columns"></a>
 ### Updating JSON Columns
 
-When updating a JSON column, you should use `->` syntax to update the appropriate key in the JSON object. This operation is supported on MariaDB 10.3+, MySQL 5.7+, and PostgreSQL 9.5+:
+When updating a JSON column, you should use `->` syntax to update the appropriate key in the JSON object. This operation is supported on MariaDB, MySQL, and PostgreSQL:
 
 ```php
 $affected = DB::table('users')
